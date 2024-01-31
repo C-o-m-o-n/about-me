@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Courier New", Courier, monospace;
+    box-sizing: border-box;
+    color: white;
+    /* cursor: none; */
+
+}
+.mouse-cursor{
+border: 1px solid green;
+width: 2rem;
+height: 2rem;
+border-radius: 50%;
+position: absolute;
+transform: translate(-50% ,-50%);
+pointer-events: none;
+z-index: 1;
+transition: all 0.3s ease;
+transition-property: background, transform;
+transform-origin: 100% 100%;
+backdrop-filter: blur(3px);
+
+}
+
+.link-grow{
+    transform: scale(2);
+    background-color: green;
+    opacity: .5;
+
+}
+
+body{
+    background-color: #040220;
+    overflow: hidden; 
+}
+
+.header-icons {
+    margin: 30px 0 0  60%;
+    padding: 4px;
+    /* border: 2px solid red; */
+}
+.header-icons img{
+    width: 30px;
+    /* margin: 5px; */
+
+}
+.header-icons a{
+    padding: 3px;
+    width: 30px;
+    margin: 5px;
+}
+
+.cont{
+    position: absolute;
+    /* border: 2px solid blue; */
+    display: flex;
+    top: 10%;
+    left: 2%;
+    align-items: center;
+}
+
+.cont-about{
+    position: absolute;
+    /* border: 2px solid blue; */
+    display: flex;
+    top: 20%;
+    left: 65%;
+    align-items: center;
+}
+
+.cont-blank{
+    position: absolute;
+    top: 40%;
+    left: 2%;
+}
+.cont-text{
+    position: absolute;
+    left: 50%;
+    width: 300px; 
+    padding: auto;
+}
+
+.cont-about-text{
+    position: absolute;
+    left: -34%;
+    /* font-weight: 700; */
+    width: 435px; 
+    padding: auto;
+    text-align: end;
+}
+.cont-blank img{
+    position: absolute;
+    left: auto;
+    top: 0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    padding: auto;
+}
+.cont-about-text h2{
+    font-size: 45px;
+}
+.cont-text h1{
+    /* color: white; */
+    font-size: 50px;
+
+}
+.off-topc{
+    position: absolute;
+    top: 37%;
+    left: 23%;
+    border: 1px solid brown;
+    /* border-radius: 60px; */
+    /* background-color: red; */
+}
+
+.red-circle{ 
+    height: 250px;
+    width: 250px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.red-circle-about{
+    height: 480px;
+    width: 480px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.red-circle-blank{
+    height: 390px;
+    width: 390px;
+    background-color: purple;
+    border-radius: 50%;
+}
+.small-circle{
+    position: absolute;
+    left: 9%;
+    top: 3%;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+}
+
+.small-circle-about{
+    position: absolute;
+    left: 60%;
+    top: 100%;
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.small-circle-blank{
+    position: absolute;
+    left: 28%;
+    top: 45%;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(180, 153, 167);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.small-circle-cert {
+    position: absolute;
+    left: 45%;
+    top: 35%;
+    height: 80px;
+    width: 80px;
+    background-color: goldenrod;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.small-circle-community{
+    position: absolute;
+    left: 55%;
+    top: 79%;
+    height: 110px;
+    width: 110px;
+    background-color: tomato;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.small-circle-blank a,
+.small-circle-about a,
+.small-circle-cert a,
+.small-circle-community a,
+.small-circle a{
+    text-decoration: none;
+    text-align: center;
+    color: #040220;
+}

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Courier New", Courier, monospace;
+    box-sizing: border-box;
+    color: white;
+    /* cursor: none; */
+
+}
+.mouse-cursor{
+border: 1px solid green;
+width: 2rem;
+height: 2rem;
+border-radius: 50%;
+position: absolute;
+transform: translate(-50% ,-50%);
+pointer-events: none;
+z-index: 1;
+transition: all 0.3s ease;
+transition-property: background, transform;
+transform-origin: 100% 100%;
+backdrop-filter: blur(3px);
+
+}
+
+.link-grow{
+    transform: scale(2);
+    background-color: green;
+    opacity: .5;
+
+}
+
+body{
+    background-color: #040220;
+    overflow: hidden; 
+}
