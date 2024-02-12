@@ -97,7 +97,13 @@ body{
     width: 100%;
     height: 100%;
     padding: auto;
+    filter: grayscale(100%);
+    transition: all 0.3s ease
 }
+.cont-blank  img:hover{
+    filter: grayscale(0%);
+}
+
 .cont-about-text h2{
     font-size: 45px;
 }

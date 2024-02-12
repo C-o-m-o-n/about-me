@@ -32,5 +32,72 @@ backdrop-filter: blur(3px);
 
 body{
     background-color: #040220;
-    overflow: hidden; 
+    /* overflow: hidden;  */
+}
+
+/* projects */
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* font-size: 1rem; */
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+.project-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 0 2rem;
+    
+}
+
+.project-images img{
+    width: 250PX;
+    height: 250PX;
+    object-fit: cover;
+    border-radius: 50px;
+    
+}
+
+.descreption{
+    align-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 350px;
+    margin-top: 2rem;
+    padding: 0 2rem;
+
+}
+
+.project-images .image{
+    /* border: 2px solid green; */
+    display: flex;
+    margin: 3px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+    filter: grayscale(100%);
+}
+.project-images .image:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+.project-images a{
+    /* text-decoration: none; */
+    color: blue;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.5s ease;
 }
